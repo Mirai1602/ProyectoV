@@ -5,7 +5,8 @@ CREATE TABLE Mascota
 (
 	Id_Masco INT PRIMARY KEY IDENTITY,
 	Nombre_Masco nchar(50) NOT NULL,
-	Especie nchar(50) NOT NULL, -- Si es canino, felino, etc.
+	Especie nchar(50) NOT NULL,-- Si es canino, felino, etc.
+	Id_Dueño INT FOREIGN KEY REFERENCES Dueño(Id_Dueño),
 	raza nchar(50), --Si es un Husky,labrador, etc.
 	Genero nchar(10) NOT NULL, -- Si es macho o hembra
 	Edad INT,
