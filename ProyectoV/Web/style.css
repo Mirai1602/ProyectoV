@@ -1,0 +1,76 @@
+*{
+     margin: 0;
+  background-image: url("FondoIndex.png"); /* ruta de tu imagen */
+  background-size: cover;             /* ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat;       /* evita que se repita */
+  background-attachment: fixed;       /* hace que el fondo quede fijo al hacer scroll */
+  background-position: center; 
+}
+
+.MensajeBienvenida{
+    font-size: 50px;
+    color: Black;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.Bienvenida{
+    font-size: 50px;
+    color: Black;
+    text-align: left;
+    margin-top: 20%;
+}
+.navbar {
+  background: var(--nav-bg);
+  padding: 4px 10px; /* menos alto, un poco más ancho */
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,0.08); /* línea sutil */
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* evita que se estiren demasiado */
+  gap: 20px; /* separación moderada */
+  max-width: 1800px; /* tamaño realista */
+  margin: 0 auto;
+}
+
+.nav-icon {
+  width: 24px; 
+  height: 30px; /* más pequeño y cuadrado */
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: var(--text);
+  font-weight: 500;
+  transition: transform .18s ease, box-shadow .18s ease;
+  flex: 0 0 24px;
+}
+
+.nav-link {
+  font-size: 13px; /* más compacto */
+  padding: 3px 6px; /* menos relleno */
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform .18s ease, box-shadow .18s ease;
+  display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.nav-icon:hover,
+.nav-icon:active {
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* versión móvil */
+@media (max-width: 480px) {
+  .nav-inner { gap: 10px; }
+  .nav-link { font-size: 12px; padding: 2px 5px; }
+}
